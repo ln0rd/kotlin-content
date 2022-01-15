@@ -1,0 +1,16 @@
+version: '3.2'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: myservice
+    command: '--default-authentication-plugin=mysql_native_password'
+    environment:
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_DATABASE: 'tourdatabase'
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./sql/database.sql:/docker-entrypoint-initdb.d/init.sql

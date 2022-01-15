@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://0.0.0.0:3306/tourdatabase
+    password: rootWrong*
+    username: root
+  jpa:
+    showSql: false
+    hibernate:
+      ddlAuto: none
+    generateDdl: true
