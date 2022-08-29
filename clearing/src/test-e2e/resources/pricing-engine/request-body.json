@@ -1,0 +1,87 @@
+[
+  {
+    "id": "1539985",
+    "hashCorrelationKey": "2501ed2d-c41a-427a-b7f3-40c97d69c7e2",
+    "isoID": "5cf141b986642840656717f1",
+    "merchantID": "5ae0c5077e70c30004c907b2",
+    "merchantCategoryCode": "1234",
+    "terminalID": "1539985",
+    "authorizerData": {
+      "name": "Pagseguro",
+      "uniqueID": "22781384615723",
+      "dateTime": "2020-09-03T08:59:07-03:00",
+      "responseCode": "00",
+      "authorizationCode": "A12285",
+      "specificData": {
+        "affiliationID": "139235585"
+      }
+    },
+    "captureChannelData": {
+      "name": "hash-pos"
+    },
+    "paymentNetworkData": {
+      "name": "Mastercard Cartão de Crédito",
+      "numericCode": "003",
+      "alphaCode": "MCC"
+    },
+    "dateTime": "2021-10-14T16:03:21-03:00",
+    "transactionType": "purchase",
+    "accountType": "credit",
+    "approved": true,
+    "crossBorder": false,
+    "entryMode": "icc",
+    "amount": 32815,
+    "currencyCode": "986",
+    "installmentTransactionData": {
+      "installmentCount": 3
+    },
+    "cardholderData": {
+      "panFirstDigits": "516292",
+      "panLastDigits": "0253",
+      "cardExpirationDate": "0428",
+      "verificationMethod": "offline-pin",
+      "issuerCountryCode": "77"
+    }
+  },
+  {
+    "id": "0EW1FMPDAAWHHWKJ1QPXREQYN8",
+    "hashCorrelationKey": "c936387b-abd0-54ed-bfe9-054410005049",
+    "isoID": "608286301a65b10006d7f709",
+    "merchantID": "5b61b02cf3ce4f0007076519",
+    "merchantCategoryCode": "5912",
+    "terminalID": "83b61278f1ea8d0007b3652a",
+    "authorizerData": {
+      "name": "pagseguro",
+      "dateTime": "2021-11-12T09:05:06-03:00",
+      "responseCode": "00",
+      "authorizationCode": "827603",
+      "specificData": {
+        "affiliationID": "163562222"
+      }
+    },
+    "paymentNetworkData": {
+      "name": "Visa Cartão de Débito",
+      "numericCode": "026",
+      "alphaCode": "VCD"
+    },
+    "dateTime": "2021-11-12T09:05:06-03:00",
+    "transactionType": "purchase",
+    "accountType": "debit",
+    "approved": true,
+    "crossBorder": false,
+    "entryMode": "icc",
+    "amount": 6440,
+    "currencyCode": "986",
+    "cardholderData": {
+      "panFirstDigits": "548591",
+      "panLastDigits": "1215",
+      "cardholderName": "ANAKIN SKYWALKER",
+      "verificationMethod": "offline-pin",
+      "issuerCountryCode": "BRA"
+    },
+    "captureChannelData": {
+      "name": "hash-pos",
+      "paymentLinkData": {}
+    }
+  }
+]

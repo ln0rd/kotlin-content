@@ -1,0 +1,17 @@
+FROM flyway/flyway:8.3.0
+
+USER flyway
+
+WORKDIR /flyway
+
+COPY --chown=flyway:flyway src/main/resources/db/migration/* /flyway/sql
+
+# This role exists only in GCP based databases, i.e., staging and production.
+RUN echo "-- $(date)" > /flyway/sql/R__PERMISSIONS.sql
+RUN echo "GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO cloudsqliamuser" >> /flyway/sql/R__PERMISSIONS.sql
+
+ENTRYPOINT \
+  export FLYWAY_URL=jdbc:postgresql://$hostname:$port/$database; \
+  export FLYWAY_USER=$username; \
+  export FLYWAY_PASSWORD=$password; \
+  flyway migrate

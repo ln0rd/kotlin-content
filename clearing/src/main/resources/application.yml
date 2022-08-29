@@ -1,0 +1,37 @@
+clearing:
+  jobs:
+    transactionReader: ${TRANSACTION_READER_DELAY:1000}
+    transactionPreProcessor: ${TRANSACTION_PRE_PROCESSOR_DELAY:1000}
+    transactionProcessor: ${TRANSACTION_PROCESSOR_DELAY:1000}
+    metaAccountingSender: ${META_ACCOUNTING_SENDER_DELAY:1000}
+    receivablesScheduleSender: ${RECEIVABLES_SCHEDULE_SENDER_DELAY:1000}
+
+hash:
+  transaction-service:
+    url: ${TRANSACTION_SERVICE_URL:https://transaction.hash.com.br}
+    username: ${TRANSACTION_SERVICE_USERNAME:transaction-service}
+    password: ${TRANSACTION_SERVICE_PASSWORD:password}
+  pricing-engine:
+    url: ${PRICING_ENGINE_URL:localhost}
+  receivable-schedule:
+    url: ${RECEIVABLE_SCHEDULE_URL:localhost}
+
+spring:
+  task:
+    scheduling.pool.size: 5
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASS}
+    hikari:
+      data-source-properties: stringtype=unspecified
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+
+gcp:
+  pubsub:
+    topicId: ${PUBSUB_TOPIC_ID}
+    subscriptionId: ${PUBSUB_SUBSCRIPTION_ID}
+    max-messages: ${PUBSUB_MAX_MESSAGES:5}

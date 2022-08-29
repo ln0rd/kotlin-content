@@ -1,0 +1,84 @@
+[
+  {
+    "transactionId": "1539985",
+    "isoRevenueDetail": [
+      {
+        "installmentNumber": 1,
+        "merchantId": "5ae0c5077e70c30004c907b2",
+        "amount": 0
+      },
+      {
+        "installmentNumber": 2,
+        "merchantId": "5ae0c5077e70c30004c907b2",
+        "amount": 0
+      },
+      {
+        "installmentNumber": 3,
+        "merchantId": "5ae0c5077e70c30004c907b2",
+        "amount": 0
+      }
+    ],
+    "hashRevenueDetail": [
+      {
+        "installmentNumber": 1,
+        "merchantId": "5ae0c5077e70c30004c907b2",
+        "amount": 0
+      },
+      {
+        "installmentNumber": 2,
+        "merchantId": "5ae0c5077e70c30004c907b2",
+        "amount": 0
+      },
+      {
+        "installmentNumber": 3,
+        "merchantId": "5ae0c5077e70c30004c907b2",
+        "amount": 0
+      }
+    ],
+    "splitDetail": [
+      {
+        "merchantId": "5ae0c5077e70c30004c907b2",
+        "installmentNumber": 1,
+        "splitAmount": 6666000,
+        "isoRevenueAmount": 0
+      },
+      {
+        "merchantId": "5ae0c5077e70c30004c907b2",
+        "installmentNumber": 2,
+        "splitAmount": 6666000,
+        "isoRevenueAmount": 0
+      },
+      {
+        "merchantId": "5ae0c5077e70c30004c907b2",
+        "installmentNumber": 3,
+        "splitAmount": 6668000,
+        "isoRevenueAmount": 0
+      }
+    ]
+  },
+  {
+    "transactionId": "0EW1FMPDAAWHHWKJ1QPXREQYN8",
+    "isoRevenueDetail": [
+      {
+        "installmentNumber": 1,
+        "merchantId": "5b61b02cf3ce4f0007076519",
+        "amount": 0
+      }
+    ],
+    "hashRevenueDetail": [
+      {
+        "installmentNumber": 1,
+        "merchantId": "5b61b02cf3ce4f0007076519",
+        "amount": 0
+      }
+    ],
+    "splitDetail": [
+      {
+        "merchantId": "5b61b02cf3ce4f0007076519",
+        "installmentNumber": 1,
+        "splitAmount": 6440000,
+        "isoRevenueAmount": 0
+      }
+    ]
+  }
+]

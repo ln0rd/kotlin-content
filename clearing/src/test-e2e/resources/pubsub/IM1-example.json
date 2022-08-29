@@ -1,0 +1,48 @@
+{
+  "specversion": "1.x-wip",
+  "source": "hash.dev/transactionEventServer",
+  "type": "dev.hash.events.transaction",
+  "dataschema": "http://hash.dev/transactionEventServer/v1",
+  "id": "1539985",
+  "data": {
+    "id": "1539985",
+    "hashCorrelationKey": "2501ed2d-c41a-427a-b7f3-40c97d69c7e2",
+    "isoID": "5cf141b986642840656717f1",
+    "merchantID": "5ae0c5077e70c30004c907b2",
+    "merchantCategoryCode": "1234",
+    "terminalID": "1539985",
+    "authorizerData": {
+      "name": "Pagseguro",
+      "uniqueID": "22781384615723",
+      "dateTime": "2020-09-03T08:59:05-03:00",
+      "responseCode": "00",
+      "authorizationCode": "A12285",
+      "specificData": {
+        "affiliationID": "139235585"
+      }
+    },
+    "captureChannelData": {
+      "name": "hash-pos"
+    },
+    "paymentNetworkData": {
+      "name": "Visa Cartão de Débito",
+      "numericCode": "026",
+      "alphaCode": "VCD"
+    },
+    "dateTime": "2020-09-03T08:59:05-03:00",
+    "transactionType": "purchase",
+    "accountType": "debit",
+    "approved": true,
+    "crossBorder": false,
+    "entryMode": "icc",
+    "amount": 12000,
+    "currencyCode": "986",
+    "cardholderData": {
+      "panFirstDigits": "516292",
+      "panLastDigits": "0253",
+      "cardExpirationDate": "0428",
+      "verificationMethod": "offline-pin",
+      "issuerCountryCode": "076"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "timezone": "America/Sao_Paulo",
+  "schedule": [
+    "every weekend"
+  ],
+  "prConcurrentLimit": 5
+}

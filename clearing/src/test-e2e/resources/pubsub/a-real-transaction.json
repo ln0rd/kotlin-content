@@ -1,0 +1,57 @@
+{
+  "specversion": "1.x-wip",
+  "source": "hash.dev/transactionEventServer",
+  "type": "dev.hash.events.transaction",
+  "dataschema": "http://hash.dev/transactionEventServer/v1",
+  "id": "0EW1FMPDAAWHHWKJ1QPXREQYN8",
+  "data": {
+    "id": "0EW1FMPDAAWHHWKJ1QPXREQYN8",
+    "hashCorrelationKey": "c936387b-abd0-54ed-bfe9-054410005049",
+    "isoID": "608286301a65b10006d7f709",
+    "merchantID": "5b61b02cf3ce4f0007076519",
+    "merchantCategoryCode": "5912",
+    "terminalID": "83b61278f1ea8d0007b3652a",
+    "authorizerData": {
+      "name": "pagseguro",
+      "dateTime": "2021-11-12T12:05:06-03:00",
+      "responseCode": "00",
+      "authorizationCode": "827603",
+      "specificData": {
+        "affiliationID": "163562222"
+      }
+    },
+    "paymentNetworkData": {
+      "name": "",
+      "numericCode": "",
+      "alphaCode": ""
+    },
+    "dateTime": "2021-11-12T12:05:06-03:00",
+    "transactionType": "purchase",
+    "accountType": "credit",
+    "approved": true,
+    "crossBorder": false,
+    "entryMode": "icc",
+    "amount": 6440,
+    "currencyCode": "986",
+    "installmentTransactionData": {
+      "installmentCount": 3,
+      "installmentQualifier": "merchant"
+    },
+    "cardholderData": {
+      "panFirstDigits": "548591",
+      "panLastDigits": "1215",
+      "cardholderName": "ANAKIN SKYWALKER",
+      "verificationMethod": "offline-pin",
+      "issuerCountryCode": "BRA"
+    },
+    "captureChannelData": {
+      "name": "hash-pos",
+      "paymentLinkData": {}
+    },
+    "deprecated_do_not_use": {
+      "do_not_use_1": "Nkc3MjI4NDI=",
+      "do_not_use_2": "TUFTVEVSQ0FSRA==",
+      "do_not_use_3": "NDMwMDUz"
+    }
+  }
+}

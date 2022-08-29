@@ -1,0 +1,38 @@
+clearing:
+  jobs:
+    transactionReader: ${TRANSACTION_READER_DELAY:1000}
+    transactionPreProcessor: ${TRANSACTION_PRE_PROCESSOR_DELAY:1000}
+    transactionProcessor: ${TRANSACTION_PROCESSOR_DELAY:1000}
+    metaAccountingSender: ${META_ACCOUNTING_SENDER_DELAY:1000}
+    receivablesScheduleSender: ${RECEIVABLES_SCHEDULE_SENDER_DELAY:1000}
+
+hash:
+  transaction-service:
+    url: ${TRANSACTION_SERVICE_URL:https://transaction.hash.com.br}
+    username: ${TRANSACTION_SERVICE_USERNAME:transaction-service}
+    password: ${TRANSACTION_SERVICE_PASSWORD:password}
+  pricing-engine:
+    url: ${PRICING_ENGINE_URL:pricing-engine}
+  receivable-schedule:
+    url: ${RECEIVABLE_SCHEDULE_URL:receivable-schedule}
+
+spring:
+  task:
+    scheduling.pool.size: 5
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/clearing
+    username: username
+    password: password
+    hikari:
+      data-source-properties: stringtype=unspecified
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+  cloud:
+    gcp.pubsub.emulator-host: localhost:8085
+gcp:
+  pubsub:
+    topicId: transaction-event
+    subscriptionId: clearing-transaction-event
+    max-messages: 5

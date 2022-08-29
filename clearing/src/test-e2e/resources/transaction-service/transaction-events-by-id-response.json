@@ -1,0 +1,47 @@
+{
+  "id": "01FMN657XCPBN601ZRXT8XYT57",
+  "hashCorrelationKey": "7142eaec-abfd-457d-a8cb-000054415049",
+  "isoID": "606382a65b80110006d7f709",
+  "merchantID": "6176e2174ad7d40007d09048",
+  "merchantCategoryCode": "5912",
+  "terminalID": "6177ff0a8e5eb6000756ae67",
+  "authorizerData": {
+    "name": "pagseguro",
+    "uniqueID": "0D7CCD4D-CC95-4217-877A-30F8D7356FFA",
+    "dateTime": "2021-11-16T17:14:06-03:00",
+    "responseCode": "00",
+    "authorizationCode": "499252",
+    "specificData": {
+      "affiliationID": "163562222"
+    }
+  },
+  "paymentNetworkData": {
+    "name": "Elo Cartão de Crédito",
+    "numericCode": "008",
+    "alphaCode": "ECC"
+  },
+  "dateTime": "2021-11-16T17:14:06-03:00",
+  "transactionType": "purchase",
+  "accountType": "credit",
+  "approved": true,
+  "crossBorder": false,
+  "entryMode": "icc",
+  "amount": 7390,
+  "currencyCode": "986",
+  "cardholderData": {
+    "panFirstDigits": "650516",
+    "panLastDigits": "1234",
+    "cardholderName": "OBI-WAN KENOBI",
+    "verificationMethod": "online-pin",
+    "issuerCountryCode": "BRA"
+  },
+  "captureChannelData": {
+    "name": "hash-pos",
+    "paymentLinkData": {}
+  },
+  "deprecated_do_not_use": {
+    "do_not_use_1": "Nk0yMjIzNjk=",
+    "do_not_use_2": "RUxPIENSRURJVE8=",
+    "do_not_use_3": "NTU3MDQ3"
+  }
+}
